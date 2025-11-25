@@ -86,45 +86,41 @@ with container_adn:
         
         # Usamos HTML/CSS para dibujar las "cajas" que antes dibujaba la tortuga
         st.markdown(f"""
-            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 5px;">
-                <!-- Esqueleto 5' -->
-                <div style="width: 20px; height: 30px; background-color: #333; margin-right: 5px;"></div>
-                
-                <!-- Base 1 -->
-                <div style="
-                    background-color: {c1}; 
-                    width: 60px; 
-                    height: 30px; 
-                    color: white; 
-                    text-align: center; 
-                    line-height: 30px; 
-                    font-weight: bold;
-                    border-radius: 5px 0 0 5px;
-                    text-shadow: 1px 1px 2px black;">
-                    {base1}
-                </div>
-                
-                <!-- Enlace de Hidrógeno (visual) -->
-                <div style="width: 20px; border-bottom: 2px dashed #999; height: 15px;"></div>
-                
-                <!-- Base 2 -->
-                <div style="
-                    background-color: {c2}; 
-                    width: 60px; 
-                    height: 30px; 
-                    color: white; 
-                    text-align: center; 
-                    line-height: 30px; 
-                    font-weight: bold;
-                    border-radius: 0 5px 5px 0;
-                    text-shadow: 1px 1px 2px black;">
-                    {base2}
-                </div>
-                
-                <!-- Esqueleto 3' -->
-                <div style="width: 20px; height: 30px; background-color: #333; margin-left: 5px;"></div>
-            </div>
-        """, unsafe_allow_html=True)
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 5px;">
+<!-- Esqueleto 5' -->
+<div style="width: 20px; height: 30px; background-color: #333; margin-right: 5px;"></div>
+<!-- Base 1 -->
+<div style="
+background-color: {c1}; 
+width: 60px; 
+height: 30px; 
+color: white; 
+text-align: center; 
+line-height: 30px; 
+font-weight: bold;
+border-radius: 5px 0 0 5px;
+text-shadow: 1px 1px 2px black;">
+{base1}
+</div>
+<!-- Enlace de Hidrógeno (visual) -->
+<div style="width: 20px; border-bottom: 2px dashed #999; height: 15px;"></div>                
+<!-- Base 2 -->
+<div style="
+background-color: {c2}; 
+width: 60px; 
+height: 30px; 
+color: white; 
+text-align: center; 
+line-height: 30px; 
+font-weight: bold;
+border-radius: 0 5px 5px 0;
+text-shadow: 1px 1px 2px black;">
+{base2}
+</div>
+<!-- Esqueleto 3' -->
+<div style="width: 20px; height: 30px; background-color: #333; margin-left: 5px;"></div>
+</div>
+""", unsafe_allow_html=True)
 
 # --- 5. ESTADÍSTICAS ---
 st.divider()
